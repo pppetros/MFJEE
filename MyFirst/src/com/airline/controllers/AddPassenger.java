@@ -3,7 +3,6 @@ package com.airline.controllers;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,12 +31,13 @@ public class AddPassenger extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		PrintWriter out = response.getWriter();
-		response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");
+		//response.setContentType("text/html");
+		//response.setCharacterEncoding("UTF-8");
 		out.println("<html><body>");
 		
 		out.println("<h2>Καλώς ήρθατε/Welcome Aboard!</h2>");
 		out.println("<p>Δοκιμή Git: OK</p>");
+		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.</p>");
 		
 		out.println("</body></html>");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
