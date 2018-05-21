@@ -1,8 +1,9 @@
 package com.airline.controllers;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,19 +32,20 @@ public class AddPassenger extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		
-		response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");
-		PrintWriter out = response.getWriter();
-		out.println("<html><head><title>Hello</title><meta charset=\"utf-8\"></head><body>");
+//		response.setContentType("text/html");
+//		response.setCharacterEncoding("UTF-8");
+//		PrintWriter out = response.getWriter();
+//		out.println("<html><head><title>Hello</title><meta charset=\"utf-8\"></head><body>");
+//		
+//		out.println("<h2>Καλώς ήρθατε/Welcome Aboard!</h2>");
+//		out.println("<p>Δοκιμή Git: OK</p>");
+//		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.5</p>");
+//		
+//		out.println("</body></html>");
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		out.println("<h2>Καλώς ήρθατε/Welcome Aboard!</h2>");
-		out.println("<p>Δοκιμή Git: OK</p>");
-		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.5</p>");
-		
-		out.println("</body></html>");
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-		
+		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp");
+		view.forward(request, response);
 	}
 
 	/**
