@@ -30,14 +30,15 @@ public class AddPassenger extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
+		
+		response.setContentType("text/html");
+		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
-		//response.setContentType("text/html");
-		//response.setCharacterEncoding("UTF-8");
-		out.println("<html><body>");
+		out.println("<html><head><title>Hello</title><meta charset=\"utf-8\"></head><body>");
 		
 		out.println("<h2>Καλώς ήρθατε/Welcome Aboard!</h2>");
 		out.println("<p>Δοκιμή Git: OK</p>");
-		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.</p>");
+		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.4</p>");
 		
 		out.println("</body></html>");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
