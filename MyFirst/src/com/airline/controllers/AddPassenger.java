@@ -38,7 +38,7 @@ public class AddPassenger extends HttpServlet {
 		
 		out.println("<h2>Καλώς ήρθατε/Welcome Aboard!</h2>");
 		out.println("<p>Δοκιμή Git: OK</p>");
-		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.4</p>");
+		out.println("<p>Kala pame, Ελληνικά δεν βλέπω.5</p>");
 		
 		out.println("</body></html>");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
